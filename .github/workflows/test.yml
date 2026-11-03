@@ -12,8 +12,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          java-package: 'jdk'
 
-      # 重点：给gradlew加上执行权限，很多源码fork后丢权限
       - name: Grant execute permission
         run: chmod +x gradlew
 
